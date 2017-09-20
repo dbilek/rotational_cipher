@@ -1,0 +1,3 @@
+class RotationalCipher
+
+end
