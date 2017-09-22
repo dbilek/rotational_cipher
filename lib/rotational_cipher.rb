@@ -42,7 +42,7 @@ class RotationalCipher
        remainder = letter_number
     elsif (letter_number + param_number) > HIGHER_LIMIT_NUM
      
-     if letter_number > param_number
+      if letter_number > param_number
         remainder = letter_number - param_number
       elsif letter_number == param_number
         remainder = HIGHER_LIMIT_NUM - letter_number
@@ -54,8 +54,8 @@ class RotationalCipher
       remainder = letter_number + param_number
     end
 
-      whole_letter_number = remainder + ascii_number
-      whole_letter_number.chr #return number to letter
+      letter_ascii_num = remainder + ascii_number
+      letter_ascii_num.chr #return number to letter
   end
 end
 
